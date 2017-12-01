@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9658f0a5847e255b2958fe408005a471",
+    "content-hash": "4e881ee03b28325859e94938894750d1",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -45,6 +45,51 @@
                 "web"
             ],
             "time": "2017-10-09T16:32:18+00:00"
+        },
+        {
+            "name": "apaoww/yii2-oci8",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apaoww/yii2-oci8.git",
+                "reference": "6433cfc81d6b66f552bf70a3df553df5ad8e022e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apaoww/yii2-oci8/zipball/6433cfc81d6b66f552bf70a3df553df5ad8e022e",
+                "reference": "6433cfc81d6b66f552bf70a3df553df5ad8e022e",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "apaoww\\oci8\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Apa Oww",
+                    "email": "apa.oww@gmail.com"
+                }
+            ],
+            "description": "Oci8 Driver for Yii2 ",
+            "keywords": [
+                "oci8",
+                "yii"
+            ],
+            "time": "2017-06-11 14:09:56"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -3500,7 +3545,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "apaoww/yii2-oci8": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'name' => 'FUR SEDESEM',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -15,9 +16,16 @@ return [
         'view' => [
              'theme' => [
                  'pathMap' => [
-                    '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                    '@frontend/views' => '@frontend/views'
                  ],
              ],
+        ],
+         'assetManager' => [
+            'bundles' => [
+                'dmstr\web\AdminLteAsset' => [
+                    'skin' => 'skin-green-light',
+                ],
+            ],
         ],
         'request' => [
             'csrfParam' => '_csrf-frontend',

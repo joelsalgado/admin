@@ -15,10 +15,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web/frontend/assets';
     public $css = [
         'css/site.css',
-        'datatables/dataTables.bootstrap.css',
     ];
     public $js = [
-         'datatables/dataTables.bootstrap.min.js',
+         
     ];
 
     public $depends = [
